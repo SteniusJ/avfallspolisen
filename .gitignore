@@ -1,7 +1,13 @@
 dataset
-datasets/mydataset
+datasets/*
+!datasets/mydataset.yml
 env
 __pycache__
-output
+src/runs/*
 yolo26n.pt
 yolov8n.pt
+
+!src/runs/output
+!src/runs/output/train
+src/runs/output/train/*
+!src/runs/output/train/weights
