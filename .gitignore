@@ -1,0 +1,7 @@
+dataset
+datasets/mydataset
+env
+__pycache__
+output
+yolo26n.pt
+yolov8n.pt

@@ -1,0 +1,9 @@
+path: ../datasets/mydataset
+train: train
+val: val
+test: test
+
+names:
+  0: Dryckeskartong
+  1: Konservburk
+  2: Pantburk
