@@ -1,21 +1,22 @@
 # Train model
 
 from ultralytics import YOLO
-model = YOLO('yolov8n.pt')
+model = YOLO('./runs/output/train4/weights/best.pt')
 
 results = model.train(data='../datasets/mydataset.yml',
-                      epochs=10000,
-                      patience=15,
-                      flipud=0.2,
-                      mixup=0.2,
-                      copy_paste=0.1,
-                      degrees=35.0,
-                      shear=5.0,
-                      hsv_v=0.6,
-                      hsv_h=0.1,  
+                      epochs=100,
+                      flipud=0.5,
+                      mixup=0.4,
+                      copy_paste=0.5,
+                      degrees=70.0,
+                      shear=30.0,
+                      hsv_v=0.8,
+                      hsv_h=0.3,
+                      translate=0.3,  
                       dropout=0.2,
-                      cutmix=0.1,
-                      label_smoothing=0.1,
+                      cutmix=0.3,
+                      mosaic=0.8,
+                      pretrained=True,
                       project='../output')
 
 # --- Augmentering ---

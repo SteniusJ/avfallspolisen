@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import numpy as np
 import math
 
-model = YOLO('./runs/output/train/weights/best.pt')
+model = YOLO('./runs/output/train2/weights/best.pt')
 names = model.names
 
 video_path = 0

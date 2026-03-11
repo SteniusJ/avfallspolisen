@@ -2,6 +2,6 @@
 
 from ultralytics import YOLO
 
-model = YOLO('./runs/output/train/weights/best.pt')
+model = YOLO('./runs/output/train2/weights/best.pt')
 
 results = model.predict('../datasets/torture', save=True)
