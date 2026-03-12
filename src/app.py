@@ -61,7 +61,7 @@ def analyze_frame(frame):
             # bgr (red)
             color = (0, 0, 255)
 
-            # Check if box confidence is over threshold
+            # If confidence below threshold skip
             if box.conf.item() < confidence_threshold:
                 continue
 
@@ -74,7 +74,7 @@ def analyze_frame(frame):
                 if class_names[m_index] != class_names[index]:
                     continue
 
-                # If distance below threshold and confidence below threshold change colour to green
+                # If distance below threshold and confidence over threshold change colour to green
                 if distance(self_midpoint, midpoint) < dist_threshold and confidences[m_index] > confidence_threshold:
                     color = (0, 255, 0)
                     break
