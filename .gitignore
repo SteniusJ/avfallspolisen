@@ -5,6 +5,8 @@ env
 __pycache__
 yolo26n.pt
 yolov8n.pt
+*.avi
+*.mp4
 
 src/runs/*
 !src/runs/output
