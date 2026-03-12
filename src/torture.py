@@ -1,4 +1,4 @@
-# Test model
+# Torture model
 
 from ultralytics import YOLO
 
